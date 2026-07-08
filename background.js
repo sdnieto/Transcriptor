@@ -3,7 +3,7 @@
 // ==========================================
 
 // Tu API Key privada de Deepgram (Uso local)
-const DEEPGRAM_API_KEY = '9601a6617bd52817d53ac55f5c40223d63653a0e'; 
+const DEEPGRAM_API_KEY = '//AGREGAR API KEY' ; 
 
 // Abrir panel lateral automáticamente al hacer clic en el ícono de la extensión
 chrome.action.onClicked.addListener((tab) => {
