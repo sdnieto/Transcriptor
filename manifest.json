@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Transcriptor Fonax One",
+  "version": "1.2.1",
+  "description": "Transcriptor de llamadas en tiempo real con IA. Edición Local Multicanal.",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "tabCapture",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "side_panel": {
+    "default_path": "transcriptor.html"
+  },
+  "action": {
+    "default_title": "Abrir Transcriptor Fonax"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' wss: https: wss://api.deepgram.com"
+  }
+}
